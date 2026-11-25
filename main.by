@@ -19,11 +19,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_message(chat_id=update.effective_chat.id, text="Welcome to the bot!")
 
 if __name__ == '__main__':
-    # REPLACE 'YOUR_BOT_TOKEN_HERE' with the token from BotFather
-    application = ApplicationBuilder().token('YOUR_BOT_TOKEN_HERE').build()
+     with the token from BotFather
+    application = ApplicationBuilder().token(9144060789:AAFJMDDWAt8eJwKC3Ay1nnGFY2LeRPFPo9U).build()
     
     start_handler = CommandHandler('start', start)
     application.add_handler(start_handler)
     
     application.run_polling()
-9144060789:AAFSUOszonDQMIk2sCDgmjAZLY4BXenYulM
+
