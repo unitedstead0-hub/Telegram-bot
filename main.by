@@ -1,4 +1,5 @@
- import logging
+
+import logging
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler
 
@@ -9,21 +10,21 @@ logging.basicConfig(
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
-    # Simple referral tracking logic placeholder
     payload = context.args
     if payload:
         referrer_id = payload[0]
-        # Here you would save referrer_id to your database linked to user_id
         await context.bot.send_message(chat_id=update.effective_chat.id, text=f"Welcome! Tracked referral from user {referrer_id}.")
     else:
         await context.bot.send_message(chat_id=update.effective_chat.id, text="Welcome to the bot!")
 
 if __name__ == '__main__':
-     with the token from BotFather
-    application = ApplicationBuilder().token(9144060789:AAFJMDDWAt8eJwKC3Ay1nnGFY2LeRPFPo9U).build()
+    9144060789:AAFJMDDWAt8eJwKC3Ay1nnGFY2LeRPFPo9U
+    application = ApplicationBuilder().token(TOKEN).build()
     
     start_handler = CommandHandler('start', start)
     application.add_handler(start_handler)
     
     application.run_polling()
+
+
 
