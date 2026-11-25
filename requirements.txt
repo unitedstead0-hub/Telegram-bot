@@ -1,1 +1,1 @@
-pythontelegrambot
+python-telegram-bot
