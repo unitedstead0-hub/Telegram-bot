@@ -1,2 +1,1 @@
-python_telegram_bot
-9144060789:AAFJMDDWAt8eJwKC3Ay1nnGFY2LeRPFPo9U
+python-telegram-bot
